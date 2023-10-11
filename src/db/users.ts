@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema({
   username: {type: String, required: true},
   email: {type: String, required: true},
-  // phone: {type: Number, required: true}, //TODO LATER
+  phone: {type: Number, required: true}, //TODO LATER
   authentication: {
     password: {type: String, required: true, select: false},
     salt: {type: String, select: false},
